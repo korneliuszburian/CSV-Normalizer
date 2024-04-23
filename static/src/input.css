@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles for Tables */
+.dataframe {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dataframe th,
+.dataframe td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.dataframe th {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.dataframe tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.dataframe tbody tr:hover {
+    background-color: #f1f1f1;
+}
