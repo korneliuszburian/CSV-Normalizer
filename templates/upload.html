@@ -7,7 +7,7 @@
     <title>CSV Normalizer</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/soft-ui-dashboard-tailwind.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/soft-ui-dashboard-tailwind.css') }}"> -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/nucleo-icons.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/nucleo-svg.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='dist/css/custom.css') }}">
@@ -17,34 +17,41 @@
 </head>
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
     <symbol id="logo">
-    <path d="M38.8043 31.3071H41.0734V26.6279H42.2166C42.8575 26.6279 43.1173 26.7162 43.377 27.2106L44.9533 30.3712C45.3517 31.1658 45.7501 31.3071 46.6681 31.3071H47.8633V29.3471H47.6381C47.257 29.3471 46.9625 29.3118 46.772 28.941L45.5769 26.522C45.3517 26.0629 44.9706 25.8864 44.9706 25.8864V25.851C45.4902 25.7451 47.0145 24.8092 47.0145 22.5491C47.0145 20.1831 45.4383 18.7705 43.1865 18.7705H37.6784V20.7305H38.8043V31.3071ZM41.0734 24.6504V20.7305H42.9094C44.0179 20.7305 44.6935 21.4367 44.6935 22.6727C44.6935 23.9264 44.0179 24.6504 42.8747 24.6504H41.0734ZM48.4695 26.8045C48.4695 29.3648 50.2882 31.519 53.2155 31.519C55.4151 31.519 56.7666 30.1594 56.7666 30.1594L55.8482 28.6056C55.8482 28.6056 54.7917 29.612 53.3714 29.612C52.0376 29.612 50.8944 28.7821 50.7212 27.1929H56.818C56.818 27.1929 56.8701 26.6279 56.8701 26.3631C56.8701 23.9794 55.4843 22.0901 52.9557 22.0901C50.3055 22.0901 48.4695 24.0323 48.4695 26.8045ZM50.7905 25.6391C51.033 24.5091 51.8298 23.8204 52.9557 23.8204C53.8563 23.8204 54.5839 24.5621 54.6185 25.6391H50.7905ZM58.9253 31.3071H61.1253V27.3696H61.6099C61.8868 27.3696 62.2508 27.3872 62.4241 27.705L63.8963 30.5302C64.2431 31.1835 64.5371 31.3071 65.2821 31.3071H66.9105V29.4178H66.3212C65.9058 29.4178 65.7324 29.3471 65.594 29.0823L64.5892 27.14C64.2774 26.5573 63.9655 26.4337 63.9655 26.4337V26.3984C63.9655 26.3984 64.2431 26.2572 64.6242 25.6921L66.8585 22.302H64.4158L62.6147 25.1447C62.4241 25.4273 62.0602 25.4802 61.7833 25.4802H61.1253V19.7947C61.1253 18.9647 60.7614 18.7705 59.9472 18.7705H57.8514V20.6775H58.5443C58.7869 20.6775 58.9253 20.8011 58.9253 21.066V31.3071ZM68.5339 28.0934C68.5339 30.5478 69.6942 31.519 71.5824 31.519C73.1067 31.519 74.2149 30.5831 74.6309 29.6473H74.6659C74.6659 29.6473 74.6481 29.8416 74.6481 30.0534V30.3006C74.6481 30.9363 75.0469 31.3071 75.8091 31.3071H77.835V29.4178H77.1428C76.9002 29.4178 76.7617 29.2765 76.7617 29.0293V22.302H74.5617V26.4337C74.5617 28.0405 73.6783 29.4707 72.0848 29.4707C70.9937 29.4707 70.7161 28.7292 70.7161 27.6344V23.485C70.7161 22.6727 70.37 22.302 69.5558 22.302H67.4599V24.209H68.1528C68.3954 24.209 68.5339 24.3325 68.5339 24.5973V28.0934ZM79.614 31.3071H81.7969V27.7403C81.7969 27.2106 81.8661 26.7162 81.9874 26.2748C82.3856 24.9328 83.4596 24.3855 84.3945 24.3855C84.7063 24.3855 84.9318 24.4208 84.9318 24.4208V22.2137C84.9318 22.2137 84.7241 22.1784 84.5335 22.1784C83.182 22.1784 82.1258 23.2025 81.727 24.4914H81.6927C81.6927 24.4914 81.727 24.2619 81.727 23.9264V23.3967C81.727 22.6375 81.3288 22.302 80.5495 22.302H78.54V24.209H79.2329C79.4755 24.209 79.614 24.3325 79.614 24.5973V31.3071ZM85.5478 26.8045C85.5478 29.3648 87.3661 31.519 90.2933 31.519C92.4934 31.519 93.8442 30.1594 93.8442 30.1594L92.9265 28.6056C92.9265 28.6056 91.8697 29.612 90.4496 29.612C89.1158 29.612 87.9727 28.7821 87.7993 27.1929H93.8963C93.8963 27.1929 93.9484 26.6279 93.9484 26.3631C93.9484 23.9794 92.5626 22.0901 90.0336 22.0901C87.3839 22.0901 85.5478 24.0323 85.5478 26.8045ZM87.8685 25.6391C88.1111 24.5091 88.9082 23.8204 90.0336 23.8204C90.9342 23.8204 91.662 24.5621 91.6963 25.6391H87.8685ZM96.0728 31.3071H98.2551V27.1753C98.2551 26.7515 98.3071 26.3454 98.4284 25.9746C98.7403 24.8976 99.6237 24.1383 100.801 24.1383C101.91 24.1383 102.187 24.8799 102.187 25.9746V30.1064C102.187 30.9539 102.533 31.3071 103.365 31.3071H105.46V29.4178H104.768C104.525 29.4178 104.387 29.2765 104.387 29.0293V25.5155C104.387 23.1318 103.261 22.0901 101.304 22.0901C99.5196 22.0901 98.5669 23.2025 98.1858 23.9617H98.1509C98.1509 23.9617 98.1858 23.7675 98.1858 23.5732V23.3084C98.1858 22.6727 97.8048 22.302 97.0255 22.302H94.9989V24.209H95.6918C95.9344 24.209 96.0728 24.3325 96.0728 24.5973V31.3071ZM106.32 26.8045C106.32 29.4178 108.191 31.519 111.101 31.519C113.508 31.519 114.824 29.8945 114.824 29.8945L113.907 28.3407C113.907 28.3407 112.798 29.559 111.291 29.559C109.871 29.559 108.537 28.6232 108.537 26.7869C108.537 25.1624 109.629 23.9794 111.153 23.9794C111.69 23.9794 112.417 24.1913 112.417 24.6857V25.18H114.357V24.1206C114.357 22.5668 112.296 22.0901 111.153 22.0901C108.121 22.0901 106.32 24.2619 106.32 26.8045ZM116.991 20.8364H118.913V18.7705H116.991V20.8364ZM114.756 33.0198V34.9091C114.756 34.9091 115.016 34.9621 115.414 34.9621C116.627 34.9621 119.104 34.5913 119.104 31.5719V23.5026C119.104 22.6727 118.758 22.302 117.926 22.302H115.83V24.209H116.523C116.766 24.209 116.904 24.3325 116.904 24.5973V31.3954C116.904 32.8609 115.761 33.0551 115.138 33.0551C114.912 33.0551 114.756 33.0198 114.756 33.0198ZM120.935 28.7115C120.935 30.5125 122.372 31.519 123.948 31.519C125.941 31.519 126.616 29.9298 126.616 29.9298H126.651C126.651 29.9298 126.634 30.0888 126.634 30.3183C126.634 30.848 126.945 31.3071 127.759 31.3071H129.734V29.4178H129.041C128.799 29.4178 128.66 29.2765 128.66 29.0293V25.6745C128.66 23.6616 127.794 22.0901 124.849 22.0901C123.931 22.0901 121.61 22.2666 121.61 23.9441V24.8976H123.654V24.4208C123.654 23.9264 124.434 23.8204 124.832 23.8204C125.958 23.8204 126.46 24.2972 126.46 25.5862V25.6568H126.183C124.745 25.6568 120.935 25.8864 120.935 28.7115ZM123.152 28.6056C123.152 27.3519 124.97 27.1929 126.113 27.1929H126.495V27.4048C126.495 28.4996 125.663 29.7709 124.486 29.7709C123.585 29.7709 123.152 29.2059 123.152 28.6056Z" fill="#3A3A3A"></path>
-    <path d="M130.733 31.2763H131.59V30.3852H130.733V31.2763ZM132.408 29.0876C132.408 30.4025 133.369 31.3801 134.746 31.3801C135.907 31.3801 136.53 30.6275 136.53 30.6275L136.167 30.0305C136.167 30.0305 135.63 30.6361 134.807 30.6361C133.993 30.6361 133.265 30.0738 133.265 29.0789C133.265 28.1532 133.907 27.513 134.764 27.513C135.084 27.513 135.578 27.6514 135.578 27.9628V28.2051H136.34V27.7553C136.34 27.0112 135.292 26.7949 134.764 26.7949C133.352 26.7949 132.408 27.7985 132.408 29.0876ZM137.026 29.0789C137.026 30.4112 138.074 31.3801 139.382 31.3801C140.689 31.3801 141.746 30.4112 141.746 29.0789C141.746 27.7553 140.689 26.7949 139.382 26.7949C138.074 26.7949 137.026 27.7553 137.026 29.0789ZM137.884 29.0789C137.884 28.1705 138.559 27.5217 139.382 27.5217C140.213 27.5217 140.889 28.1705 140.889 29.0789C140.889 29.9959 140.213 30.6534 139.382 30.6534C138.559 30.6534 137.884 29.9959 137.884 29.0789ZM142.795 31.2763H143.635V29.2779C143.635 29.0789 143.652 28.8885 143.696 28.7155C143.86 28.0926 144.31 27.5562 144.951 27.5562C145.618 27.5562 145.704 28.084 145.704 28.6549V31.2763H146.545V29.2779C146.545 29.0529 146.571 28.8626 146.614 28.681C146.77 28.084 147.237 27.5562 147.844 27.5562C148.493 27.5562 148.614 28.0408 148.614 28.6549V30.7226C148.614 31.112 148.779 31.2763 149.169 31.2763H150V30.5582H149.645C149.524 30.5582 149.454 30.4977 149.454 30.3679V28.4733C149.454 27.3573 148.995 26.7949 148.008 26.7949C147.298 26.7949 146.692 27.2621 146.449 27.7898H146.432C146.285 27.1323 145.861 26.7949 145.116 26.7949C144.432 26.7949 143.825 27.2881 143.618 27.7985H143.6C143.6 27.7985 143.609 27.686 143.609 27.5476V27.3832C143.609 27.0632 143.436 26.8988 143.055 26.8988H142.249V27.6168H142.605C142.725 27.6168 142.795 27.6774 142.795 27.8072V31.2763Z" fill="#3A3A3A"></path>
-    <rect x="15.5566" y="31.9531" width="10.7041" height="10.7466" fill="#A26BE6"></rect>
-    <rect x="15.5566" y="7.59424" width="10.7041" height="10.7466" fill="#A26BE6"></rect>
-    <rect x="0.894737" y="15.7966" width="18.6197" height="18.7007" fill="#8D49B0" stroke="#fff" stroke-width="1.78947"></rect>
-    <rect x="25.9945" y="41.2848" width="2.6733" height="2.68747" fill="#B977DC" stroke="#fff" stroke-width="0.894737"></rect>
-    <rect x="25.9945" y="6.32237" width="2.6733" height="2.68746" fill="#B977DC" stroke="#fff" stroke-width="0.894737"></rect>
-    <path d="M34.9667 0H29.9714V5.01508H34.9667V0Z" fill="#844DC8"></path>
-    <path d="M34.9667 45.2788H29.9714V50.2939H34.9667V45.2788Z" fill="#844DC8"></path>
-    <path d="M39.8192 7.73779H37.6784V9.88711H39.8192V7.73779Z" fill="#B145D3"></path>
-    <path d="M39.8192 40.4072H37.6784V42.5565H39.8192V40.4072Z" fill="#B145D3"></path>
-</symbol>
+        <path
+            d="M38.8043 31.3071H41.0734V26.6279H42.2166C42.8575 26.6279 43.1173 26.7162 43.377 27.2106L44.9533 30.3712C45.3517 31.1658 45.7501 31.3071 46.6681 31.3071H47.8633V29.3471H47.6381C47.257 29.3471 46.9625 29.3118 46.772 28.941L45.5769 26.522C45.3517 26.0629 44.9706 25.8864 44.9706 25.8864V25.851C45.4902 25.7451 47.0145 24.8092 47.0145 22.5491C47.0145 20.1831 45.4383 18.7705 43.1865 18.7705H37.6784V20.7305H38.8043V31.3071ZM41.0734 24.6504V20.7305H42.9094C44.0179 20.7305 44.6935 21.4367 44.6935 22.6727C44.6935 23.9264 44.0179 24.6504 42.8747 24.6504H41.0734ZM48.4695 26.8045C48.4695 29.3648 50.2882 31.519 53.2155 31.519C55.4151 31.519 56.7666 30.1594 56.7666 30.1594L55.8482 28.6056C55.8482 28.6056 54.7917 29.612 53.3714 29.612C52.0376 29.612 50.8944 28.7821 50.7212 27.1929H56.818C56.818 27.1929 56.8701 26.6279 56.8701 26.3631C56.8701 23.9794 55.4843 22.0901 52.9557 22.0901C50.3055 22.0901 48.4695 24.0323 48.4695 26.8045ZM50.7905 25.6391C51.033 24.5091 51.8298 23.8204 52.9557 23.8204C53.8563 23.8204 54.5839 24.5621 54.6185 25.6391H50.7905ZM58.9253 31.3071H61.1253V27.3696H61.6099C61.8868 27.3696 62.2508 27.3872 62.4241 27.705L63.8963 30.5302C64.2431 31.1835 64.5371 31.3071 65.2821 31.3071H66.9105V29.4178H66.3212C65.9058 29.4178 65.7324 29.3471 65.594 29.0823L64.5892 27.14C64.2774 26.5573 63.9655 26.4337 63.9655 26.4337V26.3984C63.9655 26.3984 64.2431 26.2572 64.6242 25.6921L66.8585 22.302H64.4158L62.6147 25.1447C62.4241 25.4273 62.0602 25.4802 61.7833 25.4802H61.1253V19.7947C61.1253 18.9647 60.7614 18.7705 59.9472 18.7705H57.8514V20.6775H58.5443C58.7869 20.6775 58.9253 20.8011 58.9253 21.066V31.3071ZM68.5339 28.0934C68.5339 30.5478 69.6942 31.519 71.5824 31.519C73.1067 31.519 74.2149 30.5831 74.6309 29.6473H74.6659C74.6659 29.6473 74.6481 29.8416 74.6481 30.0534V30.3006C74.6481 30.9363 75.0469 31.3071 75.8091 31.3071H77.835V29.4178H77.1428C76.9002 29.4178 76.7617 29.2765 76.7617 29.0293V22.302H74.5617V26.4337C74.5617 28.0405 73.6783 29.4707 72.0848 29.4707C70.9937 29.4707 70.7161 28.7292 70.7161 27.6344V23.485C70.7161 22.6727 70.37 22.302 69.5558 22.302H67.4599V24.209H68.1528C68.3954 24.209 68.5339 24.3325 68.5339 24.5973V28.0934ZM79.614 31.3071H81.7969V27.7403C81.7969 27.2106 81.8661 26.7162 81.9874 26.2748C82.3856 24.9328 83.4596 24.3855 84.3945 24.3855C84.7063 24.3855 84.9318 24.4208 84.9318 24.4208V22.2137C84.9318 22.2137 84.7241 22.1784 84.5335 22.1784C83.182 22.1784 82.1258 23.2025 81.727 24.4914H81.6927C81.6927 24.4914 81.727 24.2619 81.727 23.9264V23.3967C81.727 22.6375 81.3288 22.302 80.5495 22.302H78.54V24.209H79.2329C79.4755 24.209 79.614 24.3325 79.614 24.5973V31.3071ZM85.5478 26.8045C85.5478 29.3648 87.3661 31.519 90.2933 31.519C92.4934 31.519 93.8442 30.1594 93.8442 30.1594L92.9265 28.6056C92.9265 28.6056 91.8697 29.612 90.4496 29.612C89.1158 29.612 87.9727 28.7821 87.7993 27.1929H93.8963C93.8963 27.1929 93.9484 26.6279 93.9484 26.3631C93.9484 23.9794 92.5626 22.0901 90.0336 22.0901C87.3839 22.0901 85.5478 24.0323 85.5478 26.8045ZM87.8685 25.6391C88.1111 24.5091 88.9082 23.8204 90.0336 23.8204C90.9342 23.8204 91.662 24.5621 91.6963 25.6391H87.8685ZM96.0728 31.3071H98.2551V27.1753C98.2551 26.7515 98.3071 26.3454 98.4284 25.9746C98.7403 24.8976 99.6237 24.1383 100.801 24.1383C101.91 24.1383 102.187 24.8799 102.187 25.9746V30.1064C102.187 30.9539 102.533 31.3071 103.365 31.3071H105.46V29.4178H104.768C104.525 29.4178 104.387 29.2765 104.387 29.0293V25.5155C104.387 23.1318 103.261 22.0901 101.304 22.0901C99.5196 22.0901 98.5669 23.2025 98.1858 23.9617H98.1509C98.1509 23.9617 98.1858 23.7675 98.1858 23.5732V23.3084C98.1858 22.6727 97.8048 22.302 97.0255 22.302H94.9989V24.209H95.6918C95.9344 24.209 96.0728 24.3325 96.0728 24.5973V31.3071ZM106.32 26.8045C106.32 29.4178 108.191 31.519 111.101 31.519C113.508 31.519 114.824 29.8945 114.824 29.8945L113.907 28.3407C113.907 28.3407 112.798 29.559 111.291 29.559C109.871 29.559 108.537 28.6232 108.537 26.7869C108.537 25.1624 109.629 23.9794 111.153 23.9794C111.69 23.9794 112.417 24.1913 112.417 24.6857V25.18H114.357V24.1206C114.357 22.5668 112.296 22.0901 111.153 22.0901C108.121 22.0901 106.32 24.2619 106.32 26.8045ZM116.991 20.8364H118.913V18.7705H116.991V20.8364ZM114.756 33.0198V34.9091C114.756 34.9091 115.016 34.9621 115.414 34.9621C116.627 34.9621 119.104 34.5913 119.104 31.5719V23.5026C119.104 22.6727 118.758 22.302 117.926 22.302H115.83V24.209H116.523C116.766 24.209 116.904 24.3325 116.904 24.5973V31.3954C116.904 32.8609 115.761 33.0551 115.138 33.0551C114.912 33.0551 114.756 33.0198 114.756 33.0198ZM120.935 28.7115C120.935 30.5125 122.372 31.519 123.948 31.519C125.941 31.519 126.616 29.9298 126.616 29.9298H126.651C126.651 29.9298 126.634 30.0888 126.634 30.3183C126.634 30.848 126.945 31.3071 127.759 31.3071H129.734V29.4178H129.041C128.799 29.4178 128.66 29.2765 128.66 29.0293V25.6745C128.66 23.6616 127.794 22.0901 124.849 22.0901C123.931 22.0901 121.61 22.2666 121.61 23.9441V24.8976H123.654V24.4208C123.654 23.9264 124.434 23.8204 124.832 23.8204C125.958 23.8204 126.46 24.2972 126.46 25.5862V25.6568H126.183C124.745 25.6568 120.935 25.8864 120.935 28.7115ZM123.152 28.6056C123.152 27.3519 124.97 27.1929 126.113 27.1929H126.495V27.4048C126.495 28.4996 125.663 29.7709 124.486 29.7709C123.585 29.7709 123.152 29.2059 123.152 28.6056Z"
+            fill="#3A3A3A"></path>
+        <path
+            d="M130.733 31.2763H131.59V30.3852H130.733V31.2763ZM132.408 29.0876C132.408 30.4025 133.369 31.3801 134.746 31.3801C135.907 31.3801 136.53 30.6275 136.53 30.6275L136.167 30.0305C136.167 30.0305 135.63 30.6361 134.807 30.6361C133.993 30.6361 133.265 30.0738 133.265 29.0789C133.265 28.1532 133.907 27.513 134.764 27.513C135.084 27.513 135.578 27.6514 135.578 27.9628V28.2051H136.34V27.7553C136.34 27.0112 135.292 26.7949 134.764 26.7949C133.352 26.7949 132.408 27.7985 132.408 29.0876ZM137.026 29.0789C137.026 30.4112 138.074 31.3801 139.382 31.3801C140.689 31.3801 141.746 30.4112 141.746 29.0789C141.746 27.7553 140.689 26.7949 139.382 26.7949C138.074 26.7949 137.026 27.7553 137.026 29.0789ZM137.884 29.0789C137.884 28.1705 138.559 27.5217 139.382 27.5217C140.213 27.5217 140.889 28.1705 140.889 29.0789C140.889 29.9959 140.213 30.6534 139.382 30.6534C138.559 30.6534 137.884 29.9959 137.884 29.0789ZM142.795 31.2763H143.635V29.2779C143.635 29.0789 143.652 28.8885 143.696 28.7155C143.86 28.0926 144.31 27.5562 144.951 27.5562C145.618 27.5562 145.704 28.084 145.704 28.6549V31.2763H146.545V29.2779C146.545 29.0529 146.571 28.8626 146.614 28.681C146.77 28.084 147.237 27.5562 147.844 27.5562C148.493 27.5562 148.614 28.0408 148.614 28.6549V30.7226C148.614 31.112 148.779 31.2763 149.169 31.2763H150V30.5582H149.645C149.524 30.5582 149.454 30.4977 149.454 30.3679V28.4733C149.454 27.3573 148.995 26.7949 148.008 26.7949C147.298 26.7949 146.692 27.2621 146.449 27.7898H146.432C146.285 27.1323 145.861 26.7949 145.116 26.7949C144.432 26.7949 143.825 27.2881 143.618 27.7985H143.6C143.6 27.7985 143.609 27.686 143.609 27.5476V27.3832C143.609 27.0632 143.436 26.8988 143.055 26.8988H142.249V27.6168H142.605C142.725 27.6168 142.795 27.6774 142.795 27.8072V31.2763Z"
+            fill="#3A3A3A"></path>
+        <rect x="15.5566" y="31.9531" width="10.7041" height="10.7466" fill="#A26BE6"></rect>
+        <rect x="15.5566" y="7.59424" width="10.7041" height="10.7466" fill="#A26BE6"></rect>
+        <rect x="0.894737" y="15.7966" width="18.6197" height="18.7007" fill="#8D49B0" stroke="#fff"
+            stroke-width="1.78947"></rect>
+        <rect x="25.9945" y="41.2848" width="2.6733" height="2.68747" fill="#B977DC" stroke="#fff"
+            stroke-width="0.894737"></rect>
+        <rect x="25.9945" y="6.32237" width="2.6733" height="2.68746" fill="#B977DC" stroke="#fff"
+            stroke-width="0.894737"></rect>
+        <path d="M34.9667 0H29.9714V5.01508H34.9667V0Z" fill="#844DC8"></path>
+        <path d="M34.9667 45.2788H29.9714V50.2939H34.9667V45.2788Z" fill="#844DC8"></path>
+        <path d="M39.8192 7.73779H37.6784V9.88711H39.8192V7.73779Z" fill="#B145D3"></path>
+        <path d="M39.8192 40.4072H37.6784V42.5565H39.8192V40.4072Z" fill="#B145D3"></path>
+    </symbol>
 </svg>
 <body class="m-0 font-sans antialiased font-normal text-base leading-default bg-gray-50 text-slate-500">
     <aside
-        class="max-w-62.5 ease-nav-brand z-990 fixed inset-y-0 my-4 ml-4 block w-full -translate-x-full flex-wrap items-center justify-between overflow-y-auto rounded-2xl border-0 bg-white p-0 antialiased shadow-none transition-transform duration-200 xl:left-0 xl:translate-x-0 xl:bg-transparent ps">
+        class="max-w-62.5 ease-nav-brand z-990 fixed inset-y-0 my-4 ml-4 block w-full -translate-x-full flex-wrap items-center justify-between overflow-y-auto rounded-2xl border-0 bg-white p-0 antialiased shadow-none transition-transform duration-200 xl:left-0 xl:translate-x-0 xl:bg-transparent ps md:mt-8">
         <div class="h-19.5">
             <i class="absolute top-0 right-0 hidden p-4 opacity-50 cursor-pointer fas fa-times text-slate-400 xl:hidden"
                 sidenav-close></i>
-            <a class="block px-8 py-4 m-0 text-sm whitespace-nowrap text-slate-700" href="https://rekurencja.com" target="_blank">
-<svg class="inline h-full max-w-full transition-all duration-200 ease-nav-brand max-h-16" viewBox="0 0 150 51" width="150" height="51">
-                        <use xlink:href="#logo"></use>
-                     </svg>
+            <a class="block px-8 py-4 m-0 text-sm whitespace-nowrap text-slate-700" href="https://rekurencja.com"
+                target="_blank">
+                <svg class="inline h-full max-w-full transition-all duration-200 ease-nav-brand max-h-16"
+                    viewBox="0 0 150 51" width="150" height="51">
+                    <use xlink:href="#logo"></use>
+                </svg>
             </a>
         </div>
-
         <hr class="h-px mt-0 bg-transparent bg-gradient-to-r from-transparent via-black/40 to-transparent" />
-
         <div class="items-center block w-auto max-h-screen overflow-auto h-sidenav grow basis-full">
             <ul class="flex flex-col pl-0 mb-0">
                 <li class="mt-0.5 w-full">
@@ -103,7 +110,8 @@
                                 </g>
                             </svg>
                         </div>
-                        <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Przejdź do PRODIO</span>
+                        <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Przejdź do
+                            PRODIO</span>
                     </a>
                 </li>
             </ul>
@@ -174,9 +182,8 @@
                                 <div class="mb-4">
                                     <label class="block text-sm font-medium text-gray-700">Oczekiwana data:</label>
                                     <div class="flex items-center space-x-4">
-                                        <button type="button" onclick="setTodayDate('expected_date')"
-                                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Dzisiejsza
-                                            data</button>
+                                        <button type="submit" onclick="setTodayDate('expected_date')"
+                                        class="btn-outline-primary transition duration-300 ease-in-out focus:outline-none focus:shadow-outline border border-purple-700 hover:bg-purple-700 text-purple-700 hover:text-white font-normal py-2 px-4 rounded">Dzisiejsza data</button>                                            
                                         <div class="relative max-w-sm">
                                             <div
                                                 class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -189,16 +196,15 @@
                                             </div>
                                             <input datepicker type="text" id="expected_date" name="expected_date"
                                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 py-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                                placeholder="Wybierz datę">
+                                                placeholder="Wybierz datę" onchange="formatDate(this)">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="mb-4">
                                     <label class="block text-sm font-medium text-gray-700">Potwierdzona data:</label>
                                     <div class="flex items-center space-x-4">
-                                        <button type="button" onclick="setTodayDate('confirmed_date')"
-                                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Dzisiejsza
-                                            data</button>
+                                        <button type="submit" onclick="setTodayDate('confirmed_date')"
+                                        class="btn-outline-primary transition duration-300 ease-in-out focus:outline-none focus:shadow-outline border border-purple-700 hover:bg-purple-700 text-purple-700 hover:text-white font-normal py-2 px-4 rounded">Dzisiejsza data</button>  
                                         <div class="relative max-w-sm">
                                             <div
                                                 class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -211,12 +217,12 @@
                                             </div>
                                             <input datepicker type="text" id="confirmed_date" name="confirmed_date"
                                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 py-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                                placeholder="Wybierz datę">
+                                                placeholder="Wybierz datę" >
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit"
-                                    class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Aktualizuj</button>
+                                <button type="submit" onclick="setTodayDate('expected_date'); setTodayDate('confirmed_date')"
+                                class="btn-outline-primary transition duration-300 ease-in-out focus:outline-none focus:shadow-outline border border-purple-700 hover:bg-purple-700 text-purple-700 hover:text-white font-normal py-2 px-4 rounded">Aktualizuj dane</button>  
                             </div>
                         </form>
                     </div>
@@ -227,10 +233,10 @@
                     <div class="p-6">
                         <h2 class="text-xl font-semibold mb-4">CSV</h2>
                         <button onclick="toggleDataVisibility()"
-                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4">Pokaż
-                            wygenerowany plik</button>
+                            class="bg-purple-700 transition duration-300 ease-in-out focus:outline-none focus:shadow-outline border border-purple-700 hover:bg-purple-700 text-purple-700 hover:text-white font-normal py-2 px-4 rounded">Pokaż
+                            wygenerowany plik</button>                              
                         <a href="/pobierz"
-                            class="inline-block mt-4 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Pobierz</a>
+                            class="inline-block mt-4 purple-main hover:purple-main text-white font-bold py-2 px-4 rounded">Pobierz</a>
                         <div id="data-container" class="bg-white shadow rounded-lg p-4 hidden">
                             <div id="data-table">
                                 {{ data|safe }}
@@ -244,27 +250,26 @@
         <div id="notification-container"></div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
-            // Function to add notification
             function addNotification(message) {
                 var notification = $('<div class="notification-message"></div>').text(message);
                 notification.appendTo('#notification-container');
-                notification.click(function() {
+                notification.click(function () {
                     $(this).css('transform', 'translateY(100px)').css('opacity', '0');
-                    setTimeout(() => { $(this).remove(); }, 500); // Remove after transition
+                    setTimeout(() => { $(this).remove(); }, 500);
                 });
             }
         </script>
         {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
-          <script>
-            $(document).ready(function() {
-              {% for category, message in messages %}
+        <script>
+            $(document).ready(function () {
+                {% for category, message in messages %}
                 addNotification("{{ message }}");
-              {% endfor %}
+                {% endfor %}
             });
-          </script>
+        </script>
         {% endif %}
-      {% endwith %}
+        {% endwith %}
         <footer class="pt-4">
             <div class="w-full px-6 mx-auto">
                 <div class="flex flex-wrap items-center -mx-3 lg:justify-between">
@@ -277,8 +282,7 @@
     </main>
 </body>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
-<script src="{{url_for('static', filename='js/soft-ui-dashboard-tailwind.js')}}" async></script>
+<script src="{{url_for('static', filename='js/main.js')}}" async></script>
 <script src="{{url_for('static', filename='js/plugins/chartjs.min.js')}}"></script>
 <script src="{{url_for('static', filename='js/plugins/perfect-scrollbar.min.js')}}"></script>
-
 </html>

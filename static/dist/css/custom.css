@@ -43,7 +43,6 @@
     margin-top: 10px;
 }
 
-/* Notification Container */
 #notification-container {
     position: fixed;
     top: 20px;
@@ -51,9 +50,8 @@
     z-index: 1000;
 }
 
-/* Notification Message */
 .notification-message {
-    background-color: #f44336; /* Red for errors */
+    background-color: #f44336;
     color: white;
     padding: 10px;
     margin-bottom: 5px;
@@ -66,4 +64,24 @@
 
 .notification-message:hover {
     opacity: 0.9;
+}
+
+.purple-main{
+    background-color: #8d49b0;
+}
+
+.hover\:purple-main{
+    background-color: #8d49b0;
+}
+
+.border-purple{
+    border: 1px solid #8d49b0;
+}
+
+.hover\:border-purple{
+    background-color: #8d49b0;
+}
+
+.hover\:text-purple{
+    color: #8d49b0;
 }
